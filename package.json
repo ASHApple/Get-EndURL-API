@@ -1,0 +1,20 @@
+{
+  "name": "get-endurl-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": {
+    "name": "ASHApple",
+    "email": "ashapple@hjch.me",
+    "url": "https://github.com/ASHApple"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
