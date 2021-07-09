@@ -11,7 +11,7 @@
     "name": "ASHApple",
     "url": "https://github.com/ASHApple"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
