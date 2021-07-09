@@ -3,4 +3,4 @@
 
 Get-EndURL-API Netlify version.
 
-You can check out on [Netlify](https://get-endurl-api.netlify.app/)
+You can check out on [Netlify](https://get-endurl-api.netlify.app/.netlify/functions/index)
