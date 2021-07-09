@@ -4,7 +4,7 @@ const axios = require("axios");
 const serverless = require('serverless-http');
 const moment = require("moment");
 
-app.get("/.netlify/functions/index", async function(req, res) {
+app.get("/", async function(req, res) {
   const timezone = new Date().getTimezoneOffset() / 60 * -1;
   const time = `${moment().format("LLLL")} UTC${timezone > 0 ? "+" : ""}${timezone}`;
 
