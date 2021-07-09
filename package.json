@@ -2,9 +2,10 @@
   "name": "get-endurl-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "functions/server.js",
   "scripts": {
-    "start": "node ."
+    "start": "nodemon netlify.js",
+    "build": "netlify-lambda build express"
   },
   "author": {
     "name": "ASHApple",
@@ -13,8 +14,11 @@
   },
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.11",
+    "nodemon": "^2.0.10",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.5",
+    "serverless-http": "^2.7.0"
   }
 }

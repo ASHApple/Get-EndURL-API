@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const request = require("request-promise-native");
+const serverless = require('serverless-http');
 
-app.get("/", function(req, res) {
+app.get("/.netlify/functions/server", function(req, res) {
   console.log(`${new Date()} | ${req.query.url ? req.query.url : "[NO URL]"}`);
 
   if (!req.query.url) {
@@ -47,6 +48,5 @@ app.get("/", function(req, res) {
   });
 });
 
-const listener = app.listen(process.env.PORT, () => {
-  console.log("EndURL Parser API is Running on port " + listener.address().port);
-});
+module.exports = app;
+module.exports = serverless(app);
